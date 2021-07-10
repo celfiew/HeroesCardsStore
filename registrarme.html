@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+
+    <title>Heroes</title>
+</head>
+<body>
+    <header>
+        <section class="discount">
+            <p id="descuento">20% de descuento en todos los productos!</p>
+        </section>
+        <section class="heroes">
+            <img src="img/OBJECTS.png" alt="icono-ecomerce">
+            <h1 id="heros">Nombre Tienda</h1>
+        </section>
+    </header>
+
+    <main class="space-main">
+
+        <section class="formato-form">
+            <h1 class="title-form">Registro</h1>
+            <form action="index.html">
+                <section class="rectangle-form">
+                        <input id="nombre" type="name" name="nombre"
+                        placeholder="Nombre y apellido" required>
+                        <input id="email" type="email" name="email"
+                        placeholder="Correo Electrónico" required>
+                        <input id="password" type="password" name="password"
+                        placeholder="Contraeña" required>
+                        <select id="pais" name="país" class="custom-select" required>
+                            <option value disabled selected>País</option>
+                            <option value="AR">Argentina</option>
+                            <option value="CO">Colombia</option>
+                            <option value="BR">Brasil</option>
+                        </select>
+                </section>
+                <div class="butoms">
+                    <button id="reset" type="reset" class="reset">Resetear</button>
+                    <button id="submit" type="submit" class="submit">Entrar</button>
+                </div>  
+            </form> 
+            <div id="login">
+                <a class= "color-pregunta" href="ingresar.html">¿Ya tenés una cuenta?</a> 
+                <a class="color-preguntas" href="ingresar.html">Ingresá</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p> Todos los derechos reservados a FRONT END 1 </p>
+    </footer>
+    
+</body>
+</html>

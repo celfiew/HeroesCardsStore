@@ -1,0 +1,619 @@
+/*arreglos generales*/
+*{font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*header contiene los dos primeros 
+bloques o cajas, cada uno con una sección
+y un texto*/
+
+
+html{
+    font-size: 100%;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+/*sección que le da tamaño a la caja
+color y flex para maquedar usando
+filas y columnas*/
+
+.discount{
+    height: 1.5rem;
+    background-color: #1CD1B0;
+    display: flex;
+}
+
+/*se le da formato al texto de la primera caja*/
+
+#descuento{
+    padding-left: 0.7rem;
+    align-self:center;
+    font-size: 1rem;
+}
+/*Sección para la segunda caja*/
+.heroes{
+    height: 4.3rem;
+    background-color: #00669F;
+    display: flex;
+}
+/*se le da formato al texto de la segunda caja*/
+#heros{
+    font-size: 1.875rem;
+    padding-left: 1.75rem;
+    align-self: center;
+    color: white;
+    font-weight: normal;
+}
+
+main{
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+}
+
+
+/*se le da formato al texto de la 3ra caja*/
+.menu-black{
+    height: 2.5rem;
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#format-menu{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 1rem;
+    margin-right: 3%;
+}
+.menu-black li a{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+/*se unifican las tres cajas unitarias en una caja 
+principal, creando un flex para un unico flujo
+y centrando todo*/
+.tabla-general{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+#arreglo-fondo{
+    width: 18.75rem ;
+    height: 12rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#arreglo-fondo-circular{
+    width: 7.5rem;
+    height: 7.375rem;
+    border-radius: 3.75rem;
+    position: absolute;
+    top: 7.5rem;
+    left: 5.625rem;
+}
+/*Hace referencia solamente a cada
+una de las tablas unitarias pues desde
+allí se organiza su contenido*/
+/*se le da un margen general del contenido de 
+todas las tablas unitarias */
+.tabla-unitaria{
+    position: relative;
+    background-color: #F3F3F3;
+    border-radius: 1rem 1rem 0 0;
+    margin: 1.875rem 1.25rem 0px 1.25rem;
+    text-align: center;
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+/*se organiza todo dentro de 
+cada caja unitaria*/
+.vector{
+    position: absolute;
+    top: 0.9375rem;
+    left: 1.3125rem;
+}
+
+h2.tituloDos{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 1.875rem;
+}
+p.comentario{
+    font-size: 1rem;
+    margin: 1.25rem;
+}
+.show-more{
+    width: 8.04875rem;
+    height: 3.0325rem;    
+    background-color: #00669F ;
+    font-size: 0.9375rem;
+    color: #F3F3F3;
+    border: none;
+    margin-bottom: 0.8rem;
+}
+
+.show-more2{
+    position: relative;
+    left: 85px;
+    width: 8.04875rem;
+    height: 3.0325rem;
+    background-color: #00669F ;
+    font-size: 0.9375rem;
+    color: #F3F3F3;
+    border: none;
+    margin: 4.375rem 10.625rem 1.25rem auto; 
+}
+
+
+.pie-total{
+    display: flex;
+    height: 3.1875rem;
+    background-color: #00669F ;
+    justify-content: flex-end;
+}
+
+#final-text{
+    position: absolute;
+    align-self: center ;
+    font-size: 1rem;
+    color: white;
+    margin-right: 35%;
+    font-weight: lighter;
+}
+#github-location{
+    align-self: center;
+    margin-right: 3%;
+    width: 5.625rem;
+}
+
+.add{
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    background-image: url(../img/Ellipse\ 2.png);
+    background-size: 3.125rem 3.125rem;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 1.875rem;
+    top: 30%;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
+.add a:active{
+    color: #1CD1B0;
+}
+
+.add a{
+    color: white;
+    font-size: 3.125rem;
+    text-decoration: none;
+}
+
+
+/*Espacio del main*/
+.space-main{
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formato-form{
+    width: 38.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+#nombre{
+    height: 3.75rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    border-width:medium;
+    text-indent: 10px;
+}
+#username{
+    height: 3.75rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    border-width:medium;
+    text-indent: 10px;
+}
+#email{
+    height: 3.75rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-indent: 10px;
+    border-width: medium;
+}
+#password{
+    height: 3.75rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-indent: 10px;
+    border-width: medium;
+}
+
+#pais{
+    height: 3.75rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-indent: 10px;
+    border-width: medium;
+
+}
+
+textarea{
+    height: 15.6875rem;
+    border-width: medium;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.butoms{
+    display: flex;
+    margin-top: 47px;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+/*Boton de resetear y entrar*/
+
+#reset{
+    width: 300px;
+    height: 53.79px;
+    border-radius: 23.011px;
+    background-color: #888888;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+#submit{
+    width: 300px;
+    height: 53.79px;
+    border-radius: 23.011px;
+    background-color: #1CD1B0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+#submit2{
+    width: 614.25px;
+    height: 53.79px;
+    border-radius: 23.011px;
+    background-color: #1CD1B0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/*Pestaña contacto*/
+.title-form{
+    font-family: 'inter', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/*Forma del rectangulo*/
+.rectangle-form{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+#login{
+    margin-top: 20.21px;
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 5px;
+    font-size: 21.48px;
+    font-family: 'karla', sans-serif;
+}
+
+.color-preguntas{
+    color: #00669f;
+    text-decoration: none;
+}
+
+.color-pregunta{
+    color: black;
+    text-decoration: none;
+}
+
+
+footer{
+    display: flex;
+    height: 3.1875rem;
+    background-color: #00669F ;
+    justify-content: flex-end;
+    justify-content: center;
+}
+
+footer p{
+    align-self: center ;
+    font-size: 1rem;
+    color: white;
+    font-weight: lighter;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 954px;
+    height: 750px;
+    background-color: 
+    #00669F;
+    border-radius: 49px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+
+
+.container h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'inter', sans-serif;
+    color: white;
+
+}
+.container p{
+   font-size: 20px;
+   color: white; 
+   font-family: 'inter', sans-serif;
+   font-weight: 300;
+
+}
+.subcontainer{
+    display: flex;
+    grid-column-gap: 23px;
+}
+
+.format-input{
+    width: 343px;
+    height: 63px;
+    border-radius: 15.3407px;
+    border: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.format-input:focus{
+   background-color:#1CD1B0;
+   color:black
+}
+
+
+.container div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'inter', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 15px;   
+    margin-top: 30px;
+}
+
+#Fecha{
+    padding-left: 10px;
+}
+
+#Especie{
+    font-family: 'inter', sans-serif;
+    font-weight: 300;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+#Descripción{
+    margin-top: 30px;
+    border-radius: 15.3407px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border: none;
+}
+#Descripción:focus{
+    background-color:#1CD1B0;
+    color:black
+ }
+ 
+.options-add{
+    font-size: 16px;
+    font-family: 'inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 0px;   
+    margin-top: 0px;
+}
+
+#foto{
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+#power{
+    margin-top: 46px;
+}
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#type-heroe-villan{
+    margin-top: 0;
+}
+#add-super{
+    width: 466px;
+    height: 87px;
+    background-color: #1CD1B0;
+    color: black;
+    font-family: 'inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    border-radius: 23.011px;
+    border: none;
+    cursor: pointer;
+}
+#add-super:focus{
+    background-color: goldenrod;
+    color: white;
+
+}
+
+label.options-add{
+    margin-left: 2px;
+}
+
+@media (max-width:622px){
+    #submit2{
+        width: 300px;
+        
+    }
+}
+
+@media (max-width: 520px){
+    span#final-text{
+        font-size: 0.8rem}
+    }
+@media (max-width: 420px){
+     span#final-text{
+        font-size: 0.6rem} 
+    }
+
+@media (max-width: 420px){
+    span#final-text{
+        font-size: 0.6rem} 
+    }
+
+@media (max-width: 700px){
+
+    .formato-form{
+        width: 20rem;
+    }
+
+    .title-form {
+         font-size: 2.5rem;
+    }
+    #reset {
+        width: 200px;
+        height: 45px;
+        font-weight: 400;
+        font-size: 18px;
+
+    }
+    #submit {
+        width: 200px;
+        height: 45px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    #nombre{
+        height: 2.5rem;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        border-width:medium;
+        text-indent: 10px;
+    }
+    #username{
+        height: 2.5rem;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        border-width:medium;
+        text-indent: 10px;
+    }
+    #email{
+        height: 2.5rem;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-indent: 10px;
+        border-width: medium;
+    }
+    #password{
+        height: 2.5rem;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-indent: 10px;
+        border-width: medium;
+    }
+    
+    #pais{
+        height: 2.5rem;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        text-indent: 10px;
+        border-width: medium;
+    
+    }
+    
+    textarea{
+        height: 10rem;
+        border-width: medium;
+        font-size:1rem;
+        text-indent: 10px;
+    }
+
+    main{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+
+}

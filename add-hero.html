@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Heroes</title>
+</head>
+<body>
+    <header>
+        <section class="discount">
+            <p id="descuento">20% de descuento en todos los productos!</p>
+        </section>
+        <section class="heroes">
+            <img src="img/OBJECTS.png" alt="icono-ecomerce">
+            <h1 id="heros">Nombre Tienda</h1>
+        </section>
+    </header>
+
+    <header>
+        <section class="discount">
+            <p id="descuento">20% de descuento en todos los productos!</p>
+        </section>
+        <section class="heroes">
+            <img src="img/OBJECTS.png" alt="icono-ecomerce">
+            <h1 id="heros">Nombre Tienda</h1>
+        </section>
+        <nav class="menu-black">
+            <ul type=none id="format-menu">
+                <li><a href= "contacto.html">Contacto</a></li>
+                <li><a href= "registrarme.html">Registrarme</a></li>
+                <li><a href= "ingresar.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="space-main">
+        <form action="index.html">
+
+            <section class="container">
+
+                <h1>Añadí tu super!</h1>
+                <p>Agregá tu personaje favorito completando las opciones.</p>
+                    
+                <section class="subcontainer">
+                    <form action="index.html">
+                        <div>
+                            <label for= "*Nombre" class="etiqueta">*Nombre</label>
+                            <input class="format-input" type="name" id="*Nombre" name="*Nombre" required>
+                            <label for= "fecha" class="etiqueta">Fecha</label>
+                            <input class="format-input" type="date" id="Fecha" name="Fecha">
+                            <textarea name="Descripción" id="Descripción" cols="30" rows="10" placeholder="Descripción"></textarea>
+                        </div>
+                        <div>
+                            <label for= "*Especie" class="etiqueta">*Especie</label>
+                            <select class="format-input" id="Especie" name="Especie" class="custom-select" placeholder="Especie" required>
+                                <option value disabled selected>Especie</option>
+                                <option value="KR">Kronans</option>
+                                <option value="KL">Klyntar</option>
+                                <option value="FL">Flora Colossus</option>
+                            </select>
+                            <label for= "foto" class="etiqueta">Agregar Foto</label>
+                            <input type="file" class="archivo" id="foto" name="foto" accept="image/*">
+                            
+                            <label id="power" for= "poderes" class="etiqueta">Poderes</label>
+                            <label class="options-add"><input type="checkbox" id="poderes1" name="poderes1" value="volar">   Volar </label>
+                            <label class="options-add"><input type="checkbox" id="poderes2" name="poderes2" value="inteligencia">   Superinteligencia</label>
+                            <label class="options-add"><input type="checkbox" id="poderes3" name="poderes3" value="laser">   Vista de rayo láser</label>
+                            <label class="options-add"><input type="checkbox" id="poderes4" name="poderes4" value="fuerza">   Superfuerza</label>
+                            <hr>
+                            <label id="type-heroe-villan" for= "Tipo de personajes" class="etiqueta">Tipo de personajes</label>
+                            <label class="options-add"><input type="radio" name="Héroe / Heroina" value="Héroe / Heroina">   Héroe / Heroina </label>
+                            <label class="options-add"><input type="radio" name="Héroe / Heroina" value="Villano / Villana">   Villano / Villana </label>
+                        </div>
+                    </form>
+                 </section>
+                
+                 <button id="add-super">Añadir</button>
+
+
+
+            </section>
+
+        </form>
+       
+    </main>
+    
+    <footer>
+        <p> Todos los derechos reservados a FRONT END 1 </p>
+    </footer>
+    
+</body>
+</html>
