@@ -1,4 +1,4 @@
-# HeroesCardsStore
+ # HeroesCardsStore :octocat:
 
 >A virtual card store of your favorite superheroes
 
